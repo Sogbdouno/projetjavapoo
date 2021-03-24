@@ -37,8 +37,11 @@ public class FicheNotes {
     public void setDate(String date) {
         this.date = date;
     }
-    
-    public String toString(){
-        return("/Num Fiche Notes"+numFicheNote+ "/Date"+date);
+
+    @Override
+    public String toString() {
+        return "FicheNotes{" + "numFicheNote=" + numFicheNote + ", date=" + date + '}';
     }
+    
+    
 }

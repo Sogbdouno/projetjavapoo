@@ -89,9 +89,12 @@ public class Personne {
 //    public String afficher(){
 //        return ("\nprenom" + prenom + "\nom" + nom + "\nadresse" + adresse + "\nage" + age+ "\ntelephone" + telephone + "\nemail" +email);
 //    }
-    
-    public String toString(){
-        return ("\nprenom" + prenom + "\nom" + nom + "\nadresse" + adresse + "\nage" + age+ "\ntelephone" + telephone + "\nemail" +email);
+
+    @Override
+    public String toString() {
+        return "Personne{" + "prenom=" + prenom + ", nom=" + nom + ", adresse=" + adresse + ", age=" + age + ", telephone=" + telephone + ", email=" + email + '}';
     }
+    
+    
     
 }

@@ -10,60 +10,67 @@ package sn.groupesupinfo.javapoo;
  * @author boubadiop
  */
 public class Etudiant {
-    private String prenom_contact;
-    private String nom_contact;
-    private String telephone_contact;
-    private String email_contact;
+    private String prenomContact;
+    private String nomContact;
+    private String telephoneContact;
+    private String emailContact;
     
     public Etudiant(){
         
     }
     
-    public Etudiant(String prenom_conatact, String nom_contact, String telephone_contact, String emmail_contact){
-        this.prenom_contact=prenom_contact;
-        this.nom_contact=nom_contact;
-        this.telephone_contact=telephone_contact;
-        this.email_contact=email_contact;
+    public Etudiant(String prenomContact, String nomContact, String telephoneContact, String emmailContact){
+        this.prenomContact = prenomContact;
+        this.nomContact = nomContact;
+        this.telephoneContact = telephoneContact;
+        this.emailContact = emailContact;
     }
     
     public Etudiant(String prenom_contact, String nom_contact){
-        this.prenom_contact=prenom_contact;
-        this.nom_contact=nom_contact;
+        this.prenomContact = prenom_contact;
+        this.nomContact = nomContact;
     }
 
-    public String getPrenom_contact() {
-        return prenom_contact;
+    public String getPrenomContact() {
+        return prenomContact;
     }
 
-    public String getNom_contact() {
-        return nom_contact;
+    public void setPrenomContact(String prenomContact) {
+        this.prenomContact = prenomContact;
     }
 
-    public String getTelephone_contact() {
-        return telephone_contact;
+    public String getNomContact() {
+        return nomContact;
     }
 
-    public String getEmail_contact() {
-        return email_contact;
+    public void setNomContact(String nomContact) {
+        this.nomContact = nomContact;
     }
 
-    public void setPrenom_contact(String prenom_contact) {
-        this.prenom_contact = prenom_contact;
+    public String getTelephoneContact() {
+        return telephoneContact;
     }
 
-    public void setNom_contact(String nom_contact) {
-        this.nom_contact = nom_contact;
+    public void setTelephoneContact(String telephoneContact) {
+        this.telephoneContact = telephoneContact;
     }
 
-    public void setTelephone_contact(String telephone_contact) {
-        this.telephone_contact = telephone_contact;
+    public String getEmailContact() {
+        return emailContact;
     }
 
-    public void setEmail_contact(String email_contact) {
-        this.email_contact = email_contact;
+    public void setEmailContact(String emailContact) {
+        this.emailContact = emailContact;
+    }
+
+    @Override
+    public String toString() {
+        return "Etudiant{" + "prenomContact=" + prenomContact + ", nomContact=" + nomContact + ", telephoneContact=" + telephoneContact + ", emailContact=" + emailContact + '}';
     }
     
-    public String toString(){
-        return("/prenom_contact:"+prenom_contact+ "/nom_contact:"+nom_contact+ "/telephone_contact:"+telephone_contact+ "/email_contact:"+email_contact);
-    }
+    
+
+    
+    
+    
 }

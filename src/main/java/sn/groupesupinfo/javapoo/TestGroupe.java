@@ -12,8 +12,8 @@ package sn.groupesupinfo.javapoo;
 public class TestGroupe {
     public static void main (String [] args){
         Groupe g1 = new Groupe();
-        g1.setNom_groupe("PR215");
-        g1.setDate_creation("Novembre 2019");
+        g1.setNomGroupe("PR215");
+        g1.setDateCreation("Novembre 2019");
         
         Groupe g2 = new Groupe("PR310", "Janvier 2020");
         

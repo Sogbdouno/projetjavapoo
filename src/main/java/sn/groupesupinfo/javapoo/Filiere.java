@@ -37,9 +37,12 @@ public class Filiere {
     public void setDescription(String description) {
         this.description = description;
     }
-    
-    public String toString(){
-        return("/nom"+nom+ "/description"+description);
+
+    @Override
+    public String toString() {
+        return "Filiere{" + "nom=" + nom + ", description=" + description + '}';
     }
+    
+    
     
 }

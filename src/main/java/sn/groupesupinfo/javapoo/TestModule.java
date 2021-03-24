@@ -12,8 +12,8 @@ package sn.groupesupinfo.javapoo;
 public class TestModule {
     public static void main(String[]agrs){
         Module m1 = new Module();
-        m1.setNom_module("Python");
-        m1.setVolume_horaire("20h");
+        m1.setNomModule("Python");
+        m1.setVolumeHoraire("20h");
         m1.setCoefficient(2);
         m1.setDescription("Programmation oriente objet en python");
         

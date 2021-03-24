@@ -28,8 +28,11 @@ public class Professeur{
     public void setSpecialite(String specialite) {
         this.specialite = specialite;
     }
-    
-    public String toString(){
-        return("Specialite:"+specialite);
+
+    @Override
+    public String toString() {
+        return "Professeur{" + "specialite=" + specialite + '}';
     }
+    
+    
 }

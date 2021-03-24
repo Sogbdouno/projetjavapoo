@@ -10,8 +10,8 @@ package sn.groupesupinfo.javapoo;
  * @author boubadiop
  */
 public class Module {
-    private String nom_module;
-    private String volume_horaire;
+    private String nomModule;
+    private String volumeHoraire;
     private int coefficient;
     private String description;
     
@@ -19,46 +19,51 @@ public class Module {
         
     }
     
-    public Module(String nom_module, String volume_horaire, int coefficient, String description){
-        this.nom_module = nom_module;
-        this.volume_horaire = volume_horaire;
+    public Module(String nomModule, String volumeHoraire, int coefficient, String description){
+        this.nomModule = nomModule;
+        this.volumeHoraire = volumeHoraire;
         this.coefficient = coefficient;
         this.description = description;
     }
 
-    public String getNom_module() {
-        return nom_module;
+    public String getNomModule() {
+        return nomModule;
     }
 
-    public String getVolume_horaire() {
-        return volume_horaire;
+    public void setNomModule(String nomModule) {
+        this.nomModule = nomModule;
+    }
+
+    public String getVolumeHoraire() {
+        return volumeHoraire;
+    }
+
+    public void setVolumeHoraire(String volumeHoraire) {
+        this.volumeHoraire = volumeHoraire;
     }
 
     public int getCoefficient() {
         return coefficient;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setNom_module(String nom_module) {
-        this.nom_module = nom_module;
-    }
-
-    public void setVolume_horaire(String volume_horaire) {
-        this.volume_horaire = volume_horaire;
-    }
-
     public void setCoefficient(int coefficient) {
         this.coefficient = coefficient;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
     }
-    
-    public String toString(){
-        return("/Nom module:"+nom_module+ "/Volume horaire:"+volume_horaire+ "/Coefficient:"+coefficient+ "/Description:"+description);
+
+    @Override
+    public String toString() {
+        return "Module{" + "nomModule=" + nomModule + ", volumeHoraire=" + volumeHoraire + ", coefficient=" + coefficient + ", description=" + description + '}';
     }
+
+    
+    
+   
 }

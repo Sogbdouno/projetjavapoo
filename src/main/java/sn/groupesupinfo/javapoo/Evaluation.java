@@ -47,9 +47,12 @@ public class Evaluation {
     public void setDuree(String duree) {
         this.duree = duree;
     }
-    
-    public String toString(){
-        return("/type:"+type+ "/date:"+date+ "duree:"+duree);
+
+    @Override
+    public String toString() {
+        return "Evaluation{" + "type=" + type + ", date=" + date + ", duree=" + duree + '}';
     }
+    
+   
     
 }
