@@ -16,8 +16,12 @@ public class Personne {
     private int age;
     private  String telephone;
     private String email;
+    private static int nombreObjetCree = 0;
+    private final String PAYS = "seNegal";
+    private final double TAUXTVA =16.5;
 
     public Personne (){
+        Personne.nombreObjetCree ++; //à voir
         
     }
     
@@ -28,6 +32,7 @@ public class Personne {
         this.age= age;
         this.telephone= telephone;
         this.email= email;
+        Personne.nombreObjetCree ++;
     }
     
     public Personne(String prenom, String nom){
@@ -83,6 +88,19 @@ public class Personne {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    
+    public static int getNombreObjetCree(){
+        return Personne.nombreObjetCree;
+    }
+    
+    ///methodes d'objet
+    public String getpays(){
+        return this.PAYS;
+    }
+    
+    public Double getTauxTVA(){
+        return this.TAUXTVA;
     }
     
     

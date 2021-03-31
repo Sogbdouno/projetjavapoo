@@ -33,6 +33,7 @@ public class TestPersonne {
         System.out.println(p2);
         System.out.println("-------------------------------");
         System.out.println(p3);
+        System.out.println(Personne.getNombreObjetCree());
 
 
             
